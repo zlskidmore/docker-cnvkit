@@ -34,6 +34,7 @@ RUN apt-get update -y && apt-get install -y \
     wget
 
 # download and install R
+WORKDIR /usr/local/bin
 RUN wget https://cran.r-project.org/src/base/R-3/R-${r_version}.tar.gz
 RUN tar -zxvf R-${r_version}.tar.gz
 WORKDIR /usr/local/bin/R-${r_version}
