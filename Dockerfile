@@ -42,7 +42,7 @@ RUN ./configure --prefix=/usr/local/ --with-x=no
 RUN make
 RUN make install
 RUN R --vanilla -e 'install.packages(c("devtools", "BiocManager"), repos="http://cran.us.r-project.org")'
-RUN R --vanilla -e 'BiocManager::install(c(""DNAcopy""))'
+RUN R --vanilla -e 'BiocManager::install(c("DNAcopy"))'
 
 # download and install cnvkit
 WORKDIR /usr/local/bin/
