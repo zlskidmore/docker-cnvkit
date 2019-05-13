@@ -30,7 +30,8 @@ RUN apt-get update -y && apt-get install -y \
     liblzma-dev \
     openjdk-8-jdk \
     libssl-dev \
-    libxml2-dev
+    libxml2-dev \
+    wget
 
 # download and install R
 RUN wget https://cran.r-project.org/src/base/R-3/R-${r_version}.tar.gz
