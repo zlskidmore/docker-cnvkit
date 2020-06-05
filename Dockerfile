@@ -2,7 +2,7 @@
 FROM ubuntu:18.04
 
 # set the environment variables
-ENV cnvkit_version 0.9.6
+ENV cnvkit_version 0.9.7
 ENV r_version 3.5.3
 ENV DEBIAN_FRONTEND=noninteractive
 
